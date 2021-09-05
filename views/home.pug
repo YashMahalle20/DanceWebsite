@@ -1,0 +1,44 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block style 
+     style
+      include ../static/style.css
+
+block content 
+
+    section#introSection     
+                div  Welcome to Yash's Dance Academy 
+                div.small  Eat  Dance  Sleep  Repeat 
+    section#MissionSection      
+                h2  Our Missions
+                div.card
+                  h3 Dance Perfection
+                  div.card-box 
+                      div.card-img 
+                          img(src="/static/Images/d3.png")
+                      div.card-content 
+                          p  This is the best Dance Academy In the Maharshtra
+                div.card
+                  h3  Dance the way You Like
+                  div.card-box 
+                      div.card-img 
+                          img(src="/static/Images/d2.png")
+                      div.card-content 
+                          p  This is the best Dance Academy In the Maharshtra
+                div.card                     
+                  h3  Expert Teaching. 
+                  div.card-box 
+                      div.card-img 
+                          img(src="/static/Images/d3.png")
+                      div.card-content 
+                          p  This is the best Dance Academy In the Maharshtra.
+    section#sponsorSection 
+                h2   Our Sponsors 
+                div#Sponsors  
+                    img(src="static/Images/instaback.png", alt="Sponsor Image" , class = "GImage") 
+                    img(src="static/Images/microsoft.png", alt="Sponsor Image" , class = "GImage") 
+                    img(src="static/Images/chromelogo.png", alt="Sponsor Image" , class = "GImage") 
+                    img(src="static/Images/playstore.png", alt="Sponsor Image" , class = "GImage") 

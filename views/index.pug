@@ -1,0 +1,57 @@
+//- index.pug
+doctype html
+html
+  head
+    title  Yash Dance Academy
+    style
+      include ../static/style.css
+  body
+    nav#navbar 
+        ul
+            div#logo 
+              img(src="/static/Images/logo.png")
+              |   YDA
+            li #[a(href="/") Home]  
+            li #[a(href="/") About]  
+            li #[a(href="/") Services]  
+            li #[a(href="/") Class Info]  
+            li #[a(href="/contact") Contact Us]
+
+    section#introSection     
+                div  Welcome to Yash's Dance Academy 
+                div.small  Eat  Dance  Sleep  Repeat 
+    section#MissionSection      
+                h2  Our Missions
+                div.card
+                  h3 Dance Perfection
+                  div.card-box 
+                      div.card-img 
+                          img(src="/static/Images/d3.png")
+                      div.card-content 
+                          p  This is the best Dance Academy In the Maharshtra
+                div.card
+                  h3  Dance the way You Like
+                  div.card-box 
+                      div.card-img 
+                          img(src="/static/Images/d2.png")
+                      div.card-content 
+                          p  This is the best Dance Academy In the Maharshtra
+                div.card                     
+                  h3  Expert Teaching. 
+                  div.card-box 
+                      div.card-img 
+                          img(src="/static/Images/d3.png")
+                      div.card-content 
+                          p  This is the best Dance Academy In the Maharshtra.
+    section#sponsorSection 
+                h2   Our Sponsors 
+                div#Sponsors  
+                    img(src="static/Images/instaback.png", alt="Sponsor Image" , class = "GImage") 
+                    img(src="static/Images/microsoft.png", alt="Sponsor Image" , class = "GImage") 
+                    img(src="static/Images/chromelogo.png", alt="Sponsor Image" , class = "GImage") 
+                    img(src="static/Images/playstore.png", alt="Sponsor Image" , class = "GImage") 
+    footer#footer 
+                | Copywrite 2021 YashDanceAcademy.com . All rights | reserved 
+
+    script
+      include ../static/index.js
